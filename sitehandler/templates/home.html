@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {% load static %}
+
+    <!-- aos css file cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- magnific popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+</head>
+<body>
+
+<!--Head Section Starts-->
+
+<header>
+
+    <div class="container">
+
+        <a href="#" class="logo"><span>M</span>edical<span>L</span>abs</a>
+    
+        <nav class="nav">
+            <ul>
+                <li><a href="{% url 'homepage' %}">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#facility">facility</a></li>
+                <li><a href="#news">news</a></li>
+                <li><a href="{% url 'loginpage' %}">login</a></li>
+                <li><a href="{% url 'login_admin' %}">admin</a></li>
+            </ul>
+        </nav>
+    
+        <div class="fas fa-bars"></div>
+    
+    </div>   
+
+</header>
+
+<!--Head Section Ends-->
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="container">
+    
+        <div class="row min-vh-100 align-items-center text-center text-md-left">
+    
+            <div class="col-md-6 pr-md-5" data-aos="zoom-in">
+                <img src="{% static 'img/homeimage.svg' %}" width="100%" alt="">
+            </div>
+    
+            <div class="col-md-6 pl-md-5 content" data-aos="fade-left">
+                <h1><span>Medical</span> Labs <span>Inc</span> EHR</h1>
+                <h3>Designing solutions that safe guard health records and better access
+                    to patient data for better diagnosis and treatment by the best proffesionals
+                </h3>
+                <a href="{% url 'createaccountpage' %}"><button class="button">create account</button></a>
+            </div>
+    
+        </div>
+    
+    </div>
+    
+</section>
+
+<!-- home section ends -->
+
+<!-- about section start  -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="row min-vh-100 align-items-center">
+
+            <div class="col-md-6 content" data-aos="fade-right">
+
+                <div class="box">
+                    <h3> <i class="fas fa-ambulance"></i> Ambulance Services </h3>
+                    <p>A data service system designed to create effective data flow with ease of usage</p>
+                </div>
+
+                <div class="box">
+                    <h3> <i class="fas fa-procedures"></i> Experts & Emergency Rooms 24/7 </h3>
+                    <p>This eases access to electronic health records of the patients</p>
+                </div>
+
+                <div class="box">
+                    <h3> <i class="fas fa-stethoscope"></i> Free Checkups </h3>
+                    <p>There is guaranteed security and online safe guards as well as confidentiality</p>
+                </div>
+
+            </div>
+
+            <div class="col-md-6 d-none d-md-block" data-aos="fade-left">
+                <img src="{% static 'img/facimg.png' %}" width="100%" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- facility section starts  -->
+
+<section class="facility" id="facility">
+
+    <div class="container">
+
+        <h1 class="heading"><span>'</span> our facilities <span>'</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="{% static 'img/img8.jpg' %}" title="Emergency Services">
+                    <img src="{% static 'img/img8.jpg' %}" alt="">
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="{% static 'img/img3.jpg' %}" title="Pharmacy">
+                    <img src="{% static 'img/img3.jpg' %}" alt="">
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="{% static 'img/img1.jpg' %}" title="All Medical Servies">
+                    <img src="{% static 'img/img1.jpg' %}" alt="">
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="{% static 'img/img4.jpg' %}" title="Intensive Care Unit">
+                    <img src="{% static 'img/img4.jpg' %}" alt="">
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="{% static 'img/img10.jpg' %}" title="Expert Doctors">
+                    <img src="{% static 'img/img10.jpg' %}" alt="">
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="{% static 'img/img2.jpg' %}" title="Enough Beds">
+                    <img src="{% static 'img/img2.jpg' %}" alt="">
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="{% static 'img/img5.jpg' %}" title="Team">
+                    <img src="{% static 'img/img5.jpg' %}" alt="">
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="{% static 'img/img6.jpg' %}" title="Nurses">
+                    <img src="{% static 'img/img6.jpg' %}" alt="">
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="{% static 'img/img7.jpg' %}" title="Laboratory Servies">
+                    <img src="{% static 'img/img7.jpg' %}" alt="">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- facility section ends -->
+
+<!-- news section starts  -->
+
+<section class="news" id="news">
+ 
+    <div class="container min-vh-100">
+
+        <h1 class="heading"><span>'</span> news feed <span>'</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="{% static 'img/img2.jpg' %}" alt="">
+                <div class="content">
+                    <span>Feb 28, 1970</span>
+                    <a href="#">
+                        <h3>about our clinics</h3>
+                    </a>
+                    <h4>We have a great number of experts that have heloed to improve people's health.
+                        Check us at our locations to see which is nearest to you</h4>
+                    <a href="#"><button class="button">read more</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'img/img4.jpg' %}" alt="">
+                <div class="content">
+                    <span>Mar 10, 1980</span>
+                    <a href="#">
+                        <h3>about our services</h3>
+                    </a>
+                    <h4>With different locations around the country, we offer a range of competitive services
+                        that are high in quality and worth living</h4>
+                    <a href="#"><button class="button">read more</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'img/img5.jpg' %}" alt="">
+                <div class="content">
+                    <span>Apr 30, 1990</span>
+                    <a href="#">
+                        <h3>inpatient & outpatient care</h3>
+                    </a>
+                    <h4>we offer 24/7 services with our dedicated staff who are willing to help even in the most
+                        hard times, please try us out</h4>
+                    <a href="#"><button class="button">read more</button></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- news section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <h3 href="#" class="logo"><span>M</span>edical<span>L</span>abs.</h3>
+                <a>874 Kamwokya Road Plot 18 Kampala</a>
+                <a>Email: admin@kamwokyaclinics.com</a>
+                <a>Tel: +2567 029 020 092</a>
+                <a>Opening hours</a>
+                <p>Monday - Friday  8:00am - 5:00pm</p>
+                <p>Saturday 8:00am - 2:00pm</p>
+                <p>Sunday - Holidays 8:00am - 12:00pm</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <h3>links</h3>
+                <a href="{% url 'homepage' %}">home</a>
+                <a href="#">about</a>
+                <a href="#">facility</a>
+                <a href="#">news</a>
+                <a href="{% url 'loginpage' %}">login</a>
+                <a href="{% url 'login_admin' %}">admin</a>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <h3>share</h3>
+                <a href="#">facebook</a>
+                <a href="https://twitter.com/ManUtd?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">github</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <h1 class="credit text-center mx-auto">created by <span>MedLabs Creatives</span> | Copyright 2021.</h1>
+
+</section>
+
+<!-- footer section ends -->
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- magnific popup js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<!-- aos js file cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- custom js link  -->
+<script src="{% static 'js/main.js' %}"></script>
+
+
+<script>
+
+AOS.init({
+    duration:1000,
+    delay:400
+});
+
+</script>
+
+
+</body>
+
+
+</html>
+
+
+
+
+
